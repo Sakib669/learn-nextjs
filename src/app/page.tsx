@@ -78,6 +78,20 @@ export default function Home() {
         >
           Profile
         </Link>
+        <Link
+          href={"/articles/breaking-news-123?lang=en"}
+          className="border-green-700 border-4 p-2 rounded-2xl"
+          replace
+        >
+          Read in English
+        </Link>
+        <Link
+          href={"/articles/breaking-news-123?lang=fr"}
+          className="border-green-700 border-4 p-2 rounded-2xl"
+          replace
+        >
+          Read in French
+        </Link>
       </div>
     </div>
   );
