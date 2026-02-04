@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -61,6 +62,23 @@ export default function Home() {
     //     </div>
     //   </main>
     // </div>
-    <div>this is the home page of sogir uddin</div>
+    <div>
+      this is the home page of sogir uddin
+      <div className="flex bg-blue-400 justify-around">
+        <Link
+          href={"/blog"}
+          className="border-green-700 border-4 p-2 rounded-2xl"
+        >
+          blog
+        </Link>
+        <Link
+          href={"/profile"}
+          className="border-green-700 border-4 p-2 rounded-2xl"
+          replace
+        >
+          Profile
+        </Link>
+      </div>
+    </div>
   );
 }
