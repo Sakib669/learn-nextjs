@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <header className="bg-yellow-700 text-gray-500 p-5">
         this is the header from login page
       </header>

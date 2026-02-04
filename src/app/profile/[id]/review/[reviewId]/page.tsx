@@ -1,6 +1,6 @@
 "use client";
 
-import { notFound } from "next/navigation";
+import { notFound,redirect } from "next/navigation";
 import { use } from "react";
 
 type Props = {
@@ -11,7 +11,7 @@ const page = ({ params }: Props) => {
   const resolvedId = use(params);
   const { reviewId } = resolvedId;
 
-  return parseInt(reviewId) > 500 ? notFound() : <div>this is the resolvedId of reviews {reviewId}</div>;
+  return parseInt(reviewId) > 500 ? redirect("/profile") : <div>this is the resolvedId of reviews {reviewId}</div>;
 };
 
 export default page;
