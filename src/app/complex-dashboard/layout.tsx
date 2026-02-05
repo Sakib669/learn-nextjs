@@ -3,9 +3,11 @@ type Props = {
   users: React.ReactNode;
   revenue: React.ReactNode;
   notifications: React.ReactNode;
+  login: React.ReactNode;
 };
 
-const layout = ({ children, users, revenue, notifications }: Props) => {
+const layout = ({ children, users, revenue, notifications, login }: Props) => {
+  const isLoggedIn = false;
   return (
     <div>
       <div className="p-6">
@@ -18,7 +20,9 @@ const layout = ({ children, users, revenue, notifications }: Props) => {
           {revenue}
         </div>
 
-        <div className="mt-4">{notifications}</div>
+        <div className="mt-4">
+          { isLoggedIn && login}
+          {notifications}</div>
       </div>
     </div>
   );
