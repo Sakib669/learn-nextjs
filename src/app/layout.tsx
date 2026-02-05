@@ -18,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <ErrorWrapper>{children}</ErrorWrapper>
+        {/* <ErrorWrapper></ErrorWrapper> */}
+        {children}
       </body>
     </html>
   );
