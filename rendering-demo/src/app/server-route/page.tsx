@@ -1,3 +1,4 @@
+import ImageSlider from "@/component/ImageSlider";
 import { serverSideFunction } from "@/utils/server-utils";
 
 type Props = {};
@@ -7,6 +8,7 @@ const page = ({}: Props) => {
   return (
     <div>
       <p>server route : {result}</p>
+      <ImageSlider />
     </div>
   );
 };
