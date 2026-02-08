@@ -30,6 +30,7 @@ const getUserAlbums = async (userId: string) => {
 };
 
 const page = async ({ params }: Props) => {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const { id } = await params;
 
   const postsData = getUserPosts(id);
